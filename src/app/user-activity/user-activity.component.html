@@ -1,0 +1,22 @@
+<div>
+    <h2 mat-dialog-title>{{message}}</h2>
+    <mat-dialog-content class="mat-typography">
+        <div class="container"
+            fxLayout
+            fxLayout.xs="column"
+            fxLayoutAlign="center"
+            fxLayoutGap="10px"
+            fxLayoutGap.xs="0">
+            <div class="item item-1" *ngFor="let item of cpeHistoryList" fxFlex="50%">
+                <h3>Start Time : {{item.start_time}}</h3>
+                <h3>End Time : {{item.end_time}}</h3>
+            </div>
+            <div class="item item-2" fxFlex="50%">
+                <mat-calendar style="width: 70%;" [dateClass]="dateClass()" [selected]="selectedDate" (selectedChange)="onSelect($event)"></mat-calendar>
+            </div>
+        </div>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+      <button mat-button mat-dialog-close>Close</button>
+    </mat-dialog-actions>
+</div>

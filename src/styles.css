@@ -1,0 +1,274 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+.ng-select-container {
+    border-radius: 1px !important;
+    margin-bottom: -5em;
+    border: solid black;
+    border-radius: 1px !important;
+}
+@font-face {
+    font-family: 'dxc-Regular';
+    src: url('./assets/fonts/GT-Walsheim-Pro-Regular.eot?#iefix') format('embedded-opentype'), 
+         url('./assets/fonts/GT-Walsheim-Pro-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'dxc-Bold';
+    src: url('./assets/fonts/GT-Walsheim-Pro-Bold.eot?#iefix') format('embedded-opentype'), 
+         url('./assets/fonts/GT-Walsheim-Pro-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'dxc-Light';
+    src: url('./assets/fonts/GT-Walsheim-Pro-Light.eot?#iefix') format('embedded-opentype'),     
+          url('./assets/fonts/GT-Walsheim-Pro-Light.ttf') format('truetype');
+}
+/* END HERE */
+
+
+html, body {
+    height: 100%;
+    font-family: "dxc-Regular";
+    overflow: hidden;
+}
+body {
+    font-family: "dxc-Regular";
+    font-size: 100%;
+    position: relative;   
+    margin: 0; 
+}
+/* SLIDER CHANGING CSS */
+.owl-theme .owl-nav [class*=owl-]  {
+    background: #080808 !important;
+}
+video {
+    height: 11rem;
+    width: 100%;
+    outline: none;
+}
+/* for adding backgroung color of the snackbar Component  */
+.red-snackbar {
+    background: #2196F3;
+  }
+
+  /* for changing the backgroung color and hover to the Rating Component*/
+  .icon{
+    display:inline-block;
+    margin-right:3px;
+    cursor:pointer;
+    color:#ccc;
+}
+
+.icon:hover{color:yellow;} 
+
+
+:host ::ng-deep .mat-sort-header-container {
+    display: flex;
+    justify-content: center;
+    /* // padding: 10px; */
+    position: sticky;
+    font-family: "dxc-Regular";
+  }
+  
+  .mat-raised-button {
+  
+    background-color: rgb(15, 15, 15);
+    border: none;
+    /* color: rgb(241, 238, 7); */
+    color:blueviolet;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "dxc-Bold";
+  }
+  
+  .results-table {
+    margin-bottom: 30px;
+    /* overflow: auto;
+    overflow-y:scroll; */
+    font-family: "dxc-Regular";
+  }
+  
+  .box {
+    margin: 1em;
+    border: 1px solid #ccc;
+    /* // width: 500px; */
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  
+  .mat-header-cell:first-of-type {
+    flex: 0.5;
+  }
+  
+  .mat-cell:first-of-type {
+    flex: 0.5;
+  }
+   
+    .mat-cell {
+        text-align: center;
+        font-family: "dxc-Regular";
+      }
+  
+    .mat-header-cell {
+      background-color: rgb(15, 15, 15);
+      /* color: rgb(241, 238, 7); */
+      color:white;
+      text-align: center;
+      font-family: "dxc-Regular";
+    }
+    .mat-header-cell:hover {
+      background-color: rgb(15, 15, 15);
+      color: rgb(241, 238, 7);
+      text-align: center;
+      font-family: "dxc-Regular";
+    }
+  
+    .mat-row:nth-child(even) {
+      background: white;
+      font-family: "dxc-Regular";
+    }
+  
+    .mat-row:nth-child(odd) {
+      background: #c9c8c8ab;
+      font-family: "dxc-Regular";
+    }
+  
+    .mat-row:hover {
+      background-color: rgb(173, 171, 171);
+      font-family: "dxc-Regular";
+    }
+    .headerCheckbox {
+      border: 2px solid;
+      color: white;
+      text-align: center;
+      height: 1.2rem;
+    }
+  
+    .headerCheckbox:hover {
+      border: 2px solid;
+      color: rgb(241, 238, 7);
+      text-align: center;
+      height: 1.2rem;
+    }
+    
+    .mat-icon-button {
+      border-right-style: groove;
+      color: yellow;
+      background-color: black;
+      /* border-radius: 0; */
+      border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+    }
+    .mat-raised-button:hover {
+      background-color:black; /* Green */
+      color:yellow;
+    }
+    .mat-icon-button[disabled][disabled] {
+      color: whitesmoke;
+    }
+
+    table{
+    font-family: "dxc-Regular";
+    width: 100%;
+    /* // overflow: auto; */
+    overflow-y: scroll; /* hide vertical */
+    overflow-x: scroll;
+    }
+  
+  .mat-row.highlighted {
+    background-color: gray !important;
+    color: white;
+    font-family: "dxc-Regular";
+  }
+  
+  .mat-form-field {
+    padding: 0 5px 0 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 100%;
+    font-family: "dxc-Regular";
+  }
+  
+  .mat-paginator-sticky {
+    bottom: 0px;
+    position: sticky;
+    z-index: 10;
+  }
+  .mat-paginator-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 56px;
+    padding: 0 40px;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+}
+  
+  
+  .noResults {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    font-family: "Roboto", sans-serif;
+    font-family: "dxc-Regular";
+  }
+  /* ------------------------------------- */
+  
+  
+
+  /* css for Child component results-table.component */
+
+  .but-button {
+    width: 90px;
+    font-family: "dxc-Regular";
+  }
+  
+  .but-button-div {
+    margin: 15px 2px 15px 50px;
+    text-align: right;
+    flex-direction: row-reverse;
+    display: flex;
+    margin-bottom: 30px;
+    font-family: "dxc-Regular";
+  
+    
+  }
+  .button {
+    margin: 0 0 0 10px;
+    width: 90px;
+    color: rgb(19, 18, 19);
+    font-family: "dxc-Regular";
+  }
+
+  /* ------------------------------------- */
+  
+
+  .container > * {
+    min-width: 450px;
+  }
+  
+  .form {
+    display: flex;
+    padding-top: 6px;
+  }
+  
+  .mat-form-field {
+    font-size: 16px;
+    flex-grow: 1;
+  }
+  .form-group{
+    padding-left: 5%;
+  }
+ 
+ 
+  
+  
+
+
